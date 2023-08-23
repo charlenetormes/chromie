@@ -1,5 +1,8 @@
 <template>
-    <div class="flex flex-col w-full items-center justify-center py-20 gap-8">
+    <div
+        style="height:500px;width:400px"
+        class="flex flex-col w-full items-center justify-center py-20 gap-8"
+    >
         <div class="flex flex-col">
             <img src="@/assets/logo.png" />
             <p class="text-sm font-light text-gray-500">Chromie.AI</p>

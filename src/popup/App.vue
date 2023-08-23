@@ -1,5 +1,5 @@
 <template>
-    <div class="relative bg-white overflow-hidden">
+    <div class="relative bg-white overflow-hidden w-full h-full">
         <div class="max-w-7xl mx-auto">
             <Login v-if="page === 'login'"></Login>
             <div v-else>test</div>

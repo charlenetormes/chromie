@@ -1,24 +1,28 @@
-import { createApp } from 'vue'
-import { createStore } from 'vuex'
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createApp } from "vue";
+import { createStore } from "vuex";
+import { createRouter, createWebHashHistory } from "vue-router";
 
-import App from './App.vue'
+import App from "./App.vue";
 
 const store = createStore({
     state() {
         return {
             count: 0,
-        }
+            page: "login",
+        };
     },
     mutations: {
         increment(state) {
-            state.count++
+            state.count++;
+        },
+        page(state, payload) {
+            state.page = payload.page;
         },
     },
-})
+});
 
-const app = createApp(App)
+const app = createApp(App);
 
-app.use(store)
+app.use(store);
 
-app.mount('#app')
+app.mount("#app");

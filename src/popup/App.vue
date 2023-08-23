@@ -1,7 +1,10 @@
 <template>
     <div class="relative bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto">
-            <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+            <Login></Login>
+            <!-- <div
+                class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32"
+            >
                 <svg
                     class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
                     fill="currentColor"
@@ -13,7 +16,9 @@
                 </svg>
                 <NavBar></NavBar>
 
-                <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                <main
+                    class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
+                >
                     <transition
                         enter-active-class="duration-150 ease-out"
                         enter-from-class="opacity-0 scale-95"
@@ -25,24 +30,26 @@
                         <Home></Home>
                     </transition>
                 </main>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>
 
 <script>
-import { mapState, mapMutations } from 'vuex'
+import { mapState, mapMutations } from "vuex";
 
-import Home from './views/Home.vue'
-import NavBar from './components/NavBar.vue'
+import Home from "./views/Home.vue";
+import Login from "./views/Login.vue";
+import NavBar from "./components/NavBar.vue";
 
 export default {
     setup() {
-        return {}
+        return {};
     },
     components: {
         Home,
         NavBar,
+        Login,
     },
     computed: {
         ...mapState({
@@ -51,8 +58,12 @@ export default {
     },
     methods: {
         ...mapMutations({
-            incrementClick: 'increment',
+            incrementClick: "increment",
         }),
     },
-}
+};
 </script>
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+</style>

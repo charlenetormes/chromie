@@ -1,6 +1,6 @@
 {
     "name": "Chromie",
-    "description": "Chromie is an innovative AI Powered Chrome browser extension that serves as your AI Assistant. It leverages advanced AI technology to provide users with tools that refine their written and spoken interactions. ",
+    "description": "Chromie is an innovative AI Powered Chrome browser extension that serves as your AI Assistant",
     "version": "0.0.0.1",
     "manifest_version": 3,
     "action": {

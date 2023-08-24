@@ -18,7 +18,7 @@
         <div class="flex flex-col">
             <div
                 @click="login"
-                class="flex flex-row items-center justify-center w-56 gap-4 px-4 py-3 rounded-full border-2 border-slate-400 bg-white hover:bg-slate-400 cursor-pointer hover:transition-all"
+                class="flex flex-row items-center justify-center w-56 gap-4 px-4 py-3 rounded-full border-2 border-gray-400 bg-white hover:bg-gray-400 cursor-pointer hover:transition-all"
             >
                 <img class="w-6" src="@/assets/google-logo.svg" />
                 <p class="font-semibold text-base">Google</p>

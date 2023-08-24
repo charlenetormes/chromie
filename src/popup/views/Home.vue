@@ -1,36 +1,54 @@
 <template>
-    <div class="sm:text-center lg:text-left">
-        <h1
-            class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl"
+    <div class="flex flex-col w-full h-full py-6 px-8 gap-8">
+        <div class="flex w-full">
+            <h3 class="text-xl font-medium">My account</h3>
+        </div>
+        <div
+            class="flex flex-col w-full h-full items-center gap-4 justify-center"
         >
-            <span class="block xl:inline">Data to enrich your</span>
-            {{ " " }}
-            <span class="block text-indigo-600 xl:inline">online business</span>
-        </h1>
-        <p
-            class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
-        >
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-            fugiat aliqua.
-        </p>
-        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-            <div class="rounded-md shadow">
-                <a
-                    href="#/login"
-                    class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green hover:bg-green-500 md:py-4 md:text-lg md:px-10"
-                >
-                    Get started
-                </a>
+            <div
+                class="avatar-profile w-16 h-16 rounded-full bg-gray-600 bg-[url('@/assets/avatar-profile.png')]"
+            >
+                <img
+                    src="@/assets/avatar-profile.png"
+                    class="rounded-full w-full h-full"
+                />
             </div>
-            <div class="mt-3 sm:mt-0 sm:ml-3">
-                <a
-                    href="#"
-                    class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
-                >
-                    Something
-                </a>
+            <div class="flex flex-col gap-1 items-center justify-center">
+                <h2 class="text-lg font-semibold">Charlene Tormes</h2>
+                <p class="text-base  text-gray-700">charlene@inspireteam.com</p>
+            </div>
+        </div>
+
+        <div class="flex w-full gap-4 items-center">
+            <div class="flex p-6 w-32 bg-gray-200 rounded-xl cursor-pointer">
+                <div class="flex flex-col gap-3 w-full">
+                    <div
+                        class="flex flex-col gap-3 items-center justify-center w-full"
+                    >
+                        <img
+                            class="icon w-10 rounded-full p-2"
+                            src="@/assets/notes.svg"
+                        />
+                        <p class=" text-base font-semibold">Notes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex p-6 w-32 bg-gray-200 rounded-xl cursor-pointer">
+                <div class="flex flex-col gap-3 w-full">
+                    <div
+                        class="flex flex-col gap-3 items-center justify-center w-full"
+                    >
+                        <img
+                            class="icon w-10 rounded-full p-2"
+                            src="@/assets/record.svg"
+                        />
+                        <p class=" text-base font-semibold">Recordings</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </template>
+
+<script setup></script>

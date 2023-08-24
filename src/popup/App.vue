@@ -2,36 +2,18 @@
     <div class="relative bg-white overflow-hidden w-full h-full">
         <div class="max-w-7xl mx-auto">
             <Login v-if="page === 'login'"></Login>
-            <div v-else>test</div>
-            <!-- <div
-                class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32"
-            >
-                <svg
-                    class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
-                    fill="currentColor"
-                    viewBox="0 0 100 100"
-                    preserveAspectRatio="none"
-                    aria-hidden="true"
+            <main v-else>
+                <transition
+                    enter-active-class="duration-150 ease-out"
+                    enter-from-class="opacity-0 scale-95"
+                    enter-to-class="opacity-100 scale-100"
+                    leave-active-class="duration-100 ease-in"
+                    leave-from-class="opacity-100 scale-100"
+                    leave-to-class="opacity-0 scale-95"
                 >
-                    <polygon points="50,0 100,0 50,100 0,100" />
-                </svg>
-                <NavBar></NavBar>
-
-                <main
-                    class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
-                >
-                    <transition
-                        enter-active-class="duration-150 ease-out"
-                        enter-from-class="opacity-0 scale-95"
-                        enter-to-class="opacity-100 scale-100"
-                        leave-active-class="duration-100 ease-in"
-                        leave-from-class="opacity-100 scale-100"
-                        leave-to-class="opacity-0 scale-95"
-                    >
-                        <Home></Home>
-                    </transition>
-                </main>
-            </div> -->
+                    <Home></Home>
+                </transition>
+            </main>
         </div>
     </div>
 </template>
@@ -67,5 +49,5 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 </style>

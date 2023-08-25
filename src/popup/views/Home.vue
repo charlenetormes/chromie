@@ -21,7 +21,10 @@
         </div>
 
         <div class="flex w-full gap-4 items-center">
-            <div class="flex p-6 w-32 bg-gray-200 rounded-xl cursor-pointer">
+            <div
+                class="flex p-6 w-32 bg-gray-200 rounded-xl cursor-pointer"
+                @click="goToNotes"
+            >
                 <div class="flex flex-col gap-3 w-full">
                     <div
                         class="flex flex-col gap-3 items-center justify-center w-full"
@@ -51,4 +54,13 @@
     </div>
 </template>
 
-<script setup></script>
+<script lang="ts" setup>
+import { useStore } from "vuex";
+const store = useStore();
+
+const goToNotes = async () => {
+    store.commit("page", {
+        page: "notes",
+    });
+};
+</script>

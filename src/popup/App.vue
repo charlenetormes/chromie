@@ -11,7 +11,8 @@
                     leave-from-class="opacity-100 scale-100"
                     leave-to-class="opacity-0 scale-95"
                 >
-                    <Home></Home>
+                    <Home v-if="page === 'home'"></Home>
+                    <Notes v-if="page === 'notes'"></Notes>
                 </transition>
             </main>
         </div>
@@ -23,6 +24,7 @@ import { mapState, mapMutations } from "vuex";
 
 import Home from "./views/Home.vue";
 import Login from "./views/Login.vue";
+import Notes from "./views/Notes.vue";
 import NavBar from "./components/NavBar.vue";
 
 export default {
@@ -33,6 +35,7 @@ export default {
         Home,
         NavBar,
         Login,
+        Notes,
     },
     computed: {
         ...mapState({

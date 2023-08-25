@@ -8,7 +8,7 @@ const store = createStore({
     state() {
         return {
             count: 0,
-            page: "home",
+            page: "login",
         };
     },
     mutations: {

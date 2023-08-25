@@ -9,3 +9,12 @@
 .icon {
     background: #f7d060;
 }
+
+.notes-back {
+    left: 30px;
+    color: #f7d060;
+}
+
+.note-date {
+    color: #f7d060;
+}
